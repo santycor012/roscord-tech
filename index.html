@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roscord Tech | Servicio Técnico de PC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e1e;
+      color: #0ff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #0ff;
+      color: #000;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 0 10px #0ff;
+    }
+    header h1 { margin: 0; font-size: 3rem; }
+    main {
+      flex: 1;
+      padding: 2rem;
+      background-color: #121212;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .service {
+      background-color: #2a2a2a;
+      border: 2px solid #0ff;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(0,255,255,0.4);
+      transition: transform 0.3s ease;
+    }
+    .service:hover { transform: scale(1.05); }
+    .service i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #0ff;
+    }
+    footer {
+      background-color: #000;
+      color: #0ff;
+      text-align: center;
+      padding: 1rem;
+    }
+    .whatsapp {
+      display: inline-block;
+      margin: 2rem auto 0;
+      padding: 1rem 2rem;
+      background-color: #0ff;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #0ff;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+    .whatsapp:hover { background-color: #0cc; }
+    form {
+      max-width: 500px;
+      margin: 3rem auto 0;
+      background-color: #2a2a2a;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,255,255,0.3);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    form button {
+      width: 100%;
+      padding: 0.8rem;
+      background-color: #0ff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      color: #000;
+      cursor: pointer;
+    }
+    form button:hover { background-color: #0cc; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Roscord Tech</h1>
+    <p>Servicio Técnico Profesional de PC en Tarragona</p>
+  </header>
+
+  <main>
+    <h2>¿Qué hacemos?</h2>
+    <div class="services">
+      <div class="service">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Formateo de PC</h3>
+        <p>Reinstalación limpia de sistemas operativos y optimización del rendimiento.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-broom"></i>
+        <h3>Limpieza Física</h3>
+        <p>Mantenimiento preventivo para evitar sobrecalentamientos y alargar la vida útil de tu equipo.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-tools"></i>
+        <h3>Reparación de Hardware</h3>
+        <p>Diagnóstico y solución de fallas en componentes físicos de tu ordenador.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-database"></i>
+        <h3>Recuperación de Datos</h3>
+        <p>Recuperamos archivos importantes desde discos duros dañados o formateados.</p>
+      </div>
+    </div>
+
+    <a class="whatsapp" href="https://wa.me/34642677771" target="_blank">
+      <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+    </a>
+
+    <form action="https://formsubmit.co/roscordtgn@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <h3 style="text-align: center; color: #0ff;">Formulario de contacto</h3>
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <textarea rows="4" name="mensaje" placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Roscord Tech - Tarragona y alrededores</p>
+  </footer>
+</body>
+</html>
